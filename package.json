@@ -1,0 +1,28 @@
+{
+  "name": "semanajsexpert-spotify-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "LOG_DISABLED=true NODE_OPTIONS=--experimental-vm-modules jest --no-cache",
+    "test:watch": "LOG_DISABLED=true NODE_OPTIONS=--experimental-vm-modules jest --no-cache --watchAll",
+    "test:coverage": "LOG_DISABLED=true NODE_OPTIONS=--experimental-vm-modules jest --no-cache --coverage tests/unit",
+    "start": "node server/index.js",
+    "live-reload": "nodemon server/index.js",
+    "dev": "yarn live-reload"
+  },
+  "engines": {
+    "node": "17"
+  },
+  "repository": "git@github.com:ErickWendel/semanajsexpert-spotify-template.git",
+  "author": "<thiago.kraetzer@brainweb.com.br>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "27"
+  },
+  "dependencies": {
+    "nodemon": "2",
+    "pino": "7.8.0",
+    "pino-pretty": "7.5.3"
+  }
+}

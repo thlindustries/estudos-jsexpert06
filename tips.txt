@@ -1,0 +1,7 @@
+server
+  serivce: Tudo que é regra de negócio ou processamento
+  controller: Intermediar a camada de apresentação e a camada de negócio
+  routes: Camada de apresentação (nunca deve se comunicar diretamente com o serfice)
+  server: Responsável por criar o servidor (mas não instancia)
+  index: Instancia o servidor e expoe para a web (lado da infraestrutura)
+  config: Tudo que for estático do projeto
